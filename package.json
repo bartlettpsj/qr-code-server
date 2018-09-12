@@ -1,0 +1,23 @@
+{
+  "name": "qri",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server-koa.js",
+    "build": "webpack server-koa.js --target='node'",
+    "execute": "npm run build && node dist/main.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3",
+    "koa": "^2.5.3",
+    "koa-router": "^7.4.0",
+    "qr-image": "^3.2.0",
+    "webpack": "^4.18.0",
+    "webpack-cli": "^3.1.0"
+  }
+}
